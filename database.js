@@ -58,8 +58,7 @@ sequelize
     total: { type: Sequelize.STRING },
   });
 
-  require('./Create/definebd')
-
+    
 module.exports = {
   sequelize: sequelize,
   Sequelize: Sequelize,

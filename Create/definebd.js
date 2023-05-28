@@ -1,4 +1,8 @@
-console.log("passou");
+
+
+function testereq(){
+  console.log("passou na function");
+}
 
 
 
