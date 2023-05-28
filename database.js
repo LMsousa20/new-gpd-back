@@ -65,7 +65,7 @@ sequelize
     valor: { type: Sequelize.DECIMAL },
   });
 
-  const Produto = sequelize.define("produto", {
+  const Produto = sequelize.define("produtos", {
     produto: { type: Sequelize.STRING },
     valor: { type: Sequelize.DECIMAL },
     e_servico: { type: Sequelize.BOOLEAN },
@@ -84,4 +84,5 @@ module.exports = {
   sequelize: sequelize,
   Sequelize: Sequelize,
 };
+
 
