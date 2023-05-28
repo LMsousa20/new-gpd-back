@@ -74,6 +74,12 @@ sequelize
 
   // Produto.sync();
 
+  Produto.create({
+    produto: "Treinamento" ,
+      valor: 80,
+      e_servico: true,
+  });
+
 module.exports = {
   sequelize: sequelize,
   Sequelize: Sequelize,
