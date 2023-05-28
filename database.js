@@ -58,7 +58,22 @@ sequelize
     total: { type: Sequelize.STRING },
   });
 
+  const Itens_Proposta = sequelize.define("itensproposta", {
+    codproposta: { type: Sequelize.DECIMAL, allowNull: false },
+    codproduto: { type: Sequelize.DECIMAL, allowNull: false },
+    quantidade: { type: Sequelize.DECIMAL, allowNull: false },
+    valor: { type: Sequelize.DECIMAL },
+  });
+
+  const Produto = sequelize.define("produto", {
+    produto: { type: Sequelize.STRING },
+    valor: { type: Sequelize.DECIMAL },
+    e_servico: { type: Sequelize.BOOLEAN },
     
+  });
+
+  // Produto.sync();
+
 module.exports = {
   sequelize: sequelize,
   Sequelize: Sequelize,
