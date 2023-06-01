@@ -29,7 +29,7 @@ router.post("/", async function (req, res) {
     e_servico: e_servico
   });
   
-  res.status(200);
+  res.status(200).send(retorno);
 }catch(err){
   return res.status(400).send(err);
 }
@@ -50,7 +50,7 @@ router.delete("/", async function (req, res) {
   });
   console.log(retorno) 
   
-  res.status(200);
+  res.status(200).send(retorno);
 }catch(err){
   return res.status(400).send(err);
 }
@@ -76,7 +76,7 @@ router.put("/", async function (req, res) {
 
     console.log(retorno)
   
-  res.status(200);
+  res.status(200).send(retorno);
 }catch(err){
   return res.status(400).send(err);
 }
