@@ -75,14 +75,15 @@ sequelize
   // Produto.sync();
 
   // Produto.create({
-  //   produto: "Treinamento" ,
-  //     valor: 80,
+  //   produto: "PdvMovel Até 4 Maquinas" ,
+  //     valor: 14.99,
   //     e_servico: true,
   // });
 
 module.exports = {
   sequelize: sequelize,
   Sequelize: Sequelize,
+  Produto: Produto
 };
 
 
