@@ -72,18 +72,29 @@ sequelize
     
   });
 
-  // Produto.sync();
+  const Tecnicos = sequelize.define("tecnicos", {
+    nome: { type: Sequelize.STRING },
+    cargo: { type: Sequelize.STRING },
+    telefone: { type: Sequelize.STRING },
+    
+  });
 
-  // Produto.create({
-  //   produto: "PdvMovel Até 4 Maquinas" ,
-  //     valor: 14.99,
-  //     e_servico: true,
+
+  // Tecnicos.sync();
+  // console.log('creou tecnicos')
+
+  // Tecnicos.create({
+  // nome: 'davi',
+  //   cargo: 'tecnico nivel 1',
+  //   telefone: '85 9 88250829',
   // });
 
 module.exports = {
   sequelize: sequelize,
   Sequelize: Sequelize,
-  Produto: Produto
+  Produto: Produto,
+  Tecnicos:Tecnicos
+
 };
 
 
