@@ -79,7 +79,16 @@ sequelize
     
   });
 
+  const Ticket = sequelize.define("tickets", {
+    fantasia: { type: Sequelize.STRING },
+    cnpj: { type: Sequelize.STRING },
+    motivo: { type: Sequelize.STRING },
+    tecnico: { type: Sequelize.STRING },
+    previsão: { type: Sequelize.STRING },
+    
+  });
 
+  // Ticket.sync();
   // Tecnicos.sync();
   // console.log('creou tecnicos')
 
@@ -93,7 +102,8 @@ module.exports = {
   sequelize: sequelize,
   Sequelize: Sequelize,
   Produto: Produto,
-  Tecnicos:Tecnicos
+  Tecnicos:Tecnicos,
+  Ticket:Ticket
 
 };
 
